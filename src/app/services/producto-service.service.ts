@@ -9,10 +9,15 @@ import {Producto} from '../interfaces/Producto';
 export class ProductoServiceService {
 
   URI = 'http://localhost:4000/productos'
+  URIC = 'http://localhost:4000/productosC'
 
   constructor(private http: HttpClient) { }
 
   getProductos(){
     return this.http.get<Producto[]>(this.URI)
+  }
+
+  getProductosC(id:number){
+    return this.http.get<Producto[]>(`${this.URIC}/${id}`)
   }
 }

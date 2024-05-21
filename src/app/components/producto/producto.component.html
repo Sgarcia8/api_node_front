@@ -1,13 +1,13 @@
 <div class="row">
   <div class="col-md-4 p-4" *ngFor="let producto of productos">
-    <div class="card">
+    <div class="card card-producto">
       <div class="card-header">
-        {{producto.nombre}}
+        <h4>{{producto.nombre}}</h4>
       </div>
-      <img [src]="producto.imagen" alt="No se pudo cargar la imagen">
+      <img class="img-prod" [src]="producto.imagen" alt="No se pudo cargar la imagen">
       <div class="card-body">
-        {{producto.precio}}
-        {{producto.descripcion}}
+        <p>Precio: {{producto.precio}}</p>
+        <p>Descripción: {{producto.descripcion}}</p>
       </div>
     </div>
   </div>

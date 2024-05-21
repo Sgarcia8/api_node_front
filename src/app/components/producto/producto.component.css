@@ -1,0 +1,13 @@
+.card-header{
+  align-self: center;
+}
+.img-prod{
+  padding: 10px;
+  border-radius: 40px;
+}
+.card-producto{
+  cursor: pointer;
+}
+.card-producto:hover{
+  border: 1px solid #333;
+}

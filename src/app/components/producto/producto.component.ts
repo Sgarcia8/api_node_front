@@ -23,4 +23,15 @@ export class ProductoComponent implements OnInit {
         err => console.log(err)
       )
   }
+
+  productoPorCategoria(id: number) {
+    this.ProductoService.getProductosC(id)
+      .subscribe(
+        res => {
+          this.productos = res
+        },
+        err => console.log(err)
+      )
+
+  }
 }
