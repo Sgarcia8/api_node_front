@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProductosVistaComponent } from './productos-vista.component';
+import { NavegadorComponent } from './navegador.component';
 
-describe('ProductosVistaComponent', () => {
-  let component: ProductosVistaComponent;
-  let fixture: ComponentFixture<ProductosVistaComponent>;
+describe('NavegadorComponent', () => {
+  let component: NavegadorComponent;
+  let fixture: ComponentFixture<NavegadorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProductosVistaComponent]
+      declarations: [NavegadorComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ProductosVistaComponent);
+    fixture = TestBed.createComponent(NavegadorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

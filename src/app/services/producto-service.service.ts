@@ -1,17 +1,18 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {producto} from '../interfaces/producto';
+
+import {Producto} from '../interfaces/Producto';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProductoService {
+export class ProductoServiceService {
 
-  URI = "http://localhost:4000/productos/productos";
+  URI = 'http://localhost:4000/productos'
 
   constructor(private http: HttpClient) { }
 
   getProductos(){
-    return this.http.get<producto[]>(this.URI);
+    return this.http.get<Producto[]>(this.URI)
   }
 }
